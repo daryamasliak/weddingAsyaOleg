@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ася & Олег • Свадебное поздравление</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <section class="section letter-section">
+      <div class="container">
+        <div id="letter"></div>
+      </div>
+    </section>
+
+    <a href="https://youtu.be/tXOKjnxDu7U" target="_blank" class="video-banner">
+      <div class="video-banner-content">
+        <span class="video-play-icon">▶</span>
+        <h3>Посмотреть видео-поздравление ❤️</h3>
+        <p>Нажми, чтобы открыть в оригинальном качестве</p>
+      </div>
+    </a>
+
+    <section class="section quiz-section">
+      <div class="container">
+        <h2 class="section-title">Маленький интерактив</h2>
+        <div class="quiz-card" id="quiz-card">
+          <div class="progress" id="progress">Вопрос 1 из 5</div>
+          <div class="question-text" id="question-text">
+            Загрузка воспоминания...
+          </div>
+
+          <button class="btn" id="action-btn" onclick="handleAction()">
+            Узнать ответ ✨
+          </button>
+
+          <div class="answer-container" id="answer-container">
+            <div class="answer-title" id="answer-title"></div>
+            <div class="answer-image-wrapper">
+              <img id="answer-img" src="" alt="Наше место" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section friends-section">
+      <div class="container">
+        <h2 class="section-title">Теплые слова от друзей</h2>
+        <p class="section-subtitle">
+          Нажми на карточку, чтобы посмотреть все фото 📸
+        </p>
+
+        <div class="friends-grid">
+          <div
+            class="friend-card"
+            data-photos="sasha1.jpg, sasha2.jpg, sasha3.jpg, sasha4.jpg, sasha5.jpg"
+          >
+            <img src="sasha1.jpg" alt="Sasha" />
+            <p class="friend-name">От Саши🤍</p>
+          </div>
+
+          <div class="friend-card" data-photos="dasha.jpg">
+            <img src="dasha.jpg" alt="Dasha" />
+            <p class="friend-name">От Даши🤍</p>
+          </div>
+
+          <div class="friend-card" data-photos="dima1.jpg, dima2.jpg">
+            <img src="dima1.jpg" alt="Dima" />
+            <p class="friend-name">От Димы🤍</p>
+          </div>
+
+          <div
+            class="friend-card"
+            data-photos="steklo1.jpg, steklo2.jpg, steklo3.jpg"
+          >
+            <img src="steklo1.jpg" alt="SashaSteklo" />
+            <p class="friend-name">От Саши🤍</p>
+          </div>
+
+          <div class="friend-card" data-photos="polina1.jpg, polina2.jpg">
+            <img src="polina1.jpg" alt="Polina" />
+            <p class="friend-name">От Полины🤍</p>
+          </div>
+
+          <div
+            class="friend-card"
+            data-photos="me1.jpg, me2.jpg, me3.jpg, me4.jpg, me5.jpg, me6.jpg, me7.jpg, me8.jpg, me9.jpg"
+          >
+            <img src="me1.jpg" alt="Dasha" />
+            <p class="friend-name">От Даши🤍</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section couple-section">
+      <div class="container">
+        <h2 class="section-title">Ася & Олег • История в кадрах</h2>
+        <p class="section-subtitle">
+          Почти десять лет любви, путешествий и общих улыбок...
+        </p>
+
+        <div class="couple-gallery">
+          <div class="couple-photo-card">
+            <img src="1.jpg" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="2.jpg" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="3.jpg" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="4.jpg" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="5.jpg" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="6.png" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="7.png" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="8.png" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="9.png" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="10.png" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="11.jpg" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+
+          <div class="couple-photo-card">
+            <img src="12.jpg" alt="Ася и Олег" />
+            <div class="photo-overlay"><span>🤍</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wedding-site-section">
+      <div class="container wedding-box">
+        <h2 class="wedding-title">Ася & Олег</h2>
+        <div class="wedding-divider">🤍</div>
+        <p class="wedding-status">Глава 1. Семья зародилась</p>
+
+        <div class="timer" id="timer">
+          <div class="timer-item">
+            <span id="days">00</span><small>дней</small>
+          </div>
+          <div class="timer-item">
+            <span id="hours">00</span><small>часов</small>
+          </div>
+          <div class="timer-item">
+            <span id="minutes">00</span><small>минут</small>
+          </div>
+          <div class="timer-item">
+            <span id="seconds">00</span><small>секунд</small>
+          </div>
+        </div>
+
+        <p class="wedding-footer">Плывите по жизни на волнах радости!</p>
+      </div>
+    </section>
+
+    <div class="modal" id="photo-modal">
+      <span class="modal-close">&times;</span>
+      <button class="modal-nav prev-btn">&#10094;</button>
+      <img class="modal-content" id="modal-img" src="" alt="Увеличенное фото" />
+      <button class="modal-nav next-btn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
